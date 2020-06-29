@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+body{
+	font-family:'roboto',san-serif;
+	font-size: 15px;
+	color: #878787;
+}
+header{
+	background-color:rgba(0,0,0,1.00);
+	padding: 0px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 9999999;
+}
+
+#inicio{ 
+background-image: url( "../img/portada-portafolio-1.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+color:#FFF;
+padding: 18% 0;
+text-align: center;
+}
+
+#inicio h3{
+font-family: 'playfair Display', serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 200;
+}
+
+#inicio h1,
+#slides h1{
+font-size: 40px;
+font-weight: 700;
+font-style:italic;
+}
+
+.btn-eduardoarteaga{
+	background: linear-gradient(to right,#FFCA00, #D9AC00);
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 0;
+	padding: 15px 30px;
+	border: 0;
+	letter-spacing: 1px;
+
+}
+.btn-eduardoarteaga:hover{
+background: linear-gradient(to right,#000000, #000000);
+transition: all 0.50 ease-in-out;
+}
+
+.acerca-de-mi{
+	color: #000000;
+	padding-top:100px;
+	paddign-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 23px;
+	
+}
+
+#espacionegro{
+	background: #FFFFFF;
+	padding-top: 20px 0;
+}
+
+#espacionegro2{
+	background: #040404;
+}
+
+.titulo{
+	font-size: 40px;
+	font-weigth:600;
+	margin-bottom: 45px;
+	color:#000;
+}
+
+#Brands img{
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#what-we-do{
+background:url("../img/marmol2.png");
+background-color:#FFFBFB;
+text-align: center;
+padding: 40px 0;
+	
+}
+
+.subtitulos{
+	font-size:18px;
+	margin-bottom: 50%;
+	margin: auto;
+	}
+
+#what-we-do h4{
+	font-size: 20px;
+	color: #FFFFFF;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+#what-we-do h3{
+	font-size: 30px;
+	color: #FFFFFF;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.circulo{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	line-height: 100px;
+	/*border: 1px solid #ddd;*/
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 5px 0px #ddd;
+	font-size: 40px;
+	color:hsla(54,100%,50%,1.00);	
+	background:hsla(0,0%,0%,1.00)
+}
+
+.circulo:hover{
+	box-shadow: 0px 0px 5px 0px #ddd;
+}
+
+.work{
+	position: relative;
+	margin: auto;
+}
+
+.work-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color:#fff;
+	opacity: 0;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.work:hover .work-bg{
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+
+.work-info h4{
+	color: #000;
+	transform: translateY(20px);
+	transition: all 0.5s ease-in-out;
+}
+
+.work-info p{
+	font-size: 12px;
+	transform: translateY(-20px);
+	transition: all 0.5s ease-in-out;
+}
+
+.work:hover .work-info h4{
+	font-size: 12px;
+	transform:translateY(0px);
+	transition: all 0.5s ease-in-out;
+}
+
+.work:hover .work-info p{
+	font-size: 12px;
+	transform: translateY(0px);
+	transition: all 0.5s ease-in-out;
+}
+
+.work-frame{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	padding:  10px;
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+
+.work-frame-info{
+position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.work:hover .work-frame{
+opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+
+.capa-relative{
+	position: relative;
+	overflow: hidden;
+}
+
+.capa-cintillo{
+	width: 100%;
+	padding: 10px 0;
+	position: Absolute;
+	bottom: 0;
+	color: #fff;
+	text-align: center;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	z-index: 50;
+}
+
+.capa-cintillo h4{
+	font-size: 16px;
+}
+
+.bg-black{
+	background-color: #000;
+}
+
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: 100;
+	top: 0;
+	background-color:rgba(255,255,255,0.75);
+	z-index: 0;
+}
+
+.capa-relative img{
+	filter: grayscale(1);
+	transition: all 0.5s ease-in-out;
+}
+.capa-relative:hover img{
+	filter: grayscale(0);
+	transform: scale(1.5);
+	transition: all 0.5s ease-in-out;
+}
+
+#work .row:last-child article:hover:first-child img{
+	transform: translateX(-20px);
+	transition: all 0.5s ease-in-out;
+}
+
+#work .row:last-child article:hover:nth-child(2) img{
+	transform: translateY(20px);
+	transition: all 0.5s ease-in-out;
+}
+
+#work .row:last-child article:hover:nth-child(3) img{
+	transform: translateX(-20px);
+	transition: all 0.5s ease-in-out;
+}
+
+.lista-redes i{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color:#ddd;
+	border-radius: 100%;
+	text-align: center;
+}
+
+.lista-redes .nav-link{
+	padding-right: 5px !important;
+}
+
+.lista-redes li:nth-child(1) i{
+	background-color:#FFC400;	
+}
+
+.lista-redes li:nth-child(2) i{
+	background-color:#FFC400;	
+}
+
+.lista-redes li:nth-child(3) i{
+	background-color:#FFC400;	
+}
+
+.lista-redes li:nth-child(4) i{
+	background-color:#FFC400;	
+}
+
+#testimonial{
+	background-image: url("../img/marmol3.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+}
+
+.testimonio i{
+	font-size: 22px;
+	margin-bottom: 35px;
+}
+
+.testimonio p{
+	font-size: 20px;
+	width: 70%;
+	margin: 0px auto 40px;
+}
+
+.testimonio img{
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+}
+
+.testimonio h4{
+	font-size: 16px;
+}
+
+#testimonial .carousel-item{
+height: 400px;	
+}
+
+footer{
+	background-color: #121212;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 12px;
+	
+}
+
+footer ul{
+text-align: center;
+}
+
+footer ul li{
+padding-right: 15px;	
+}
+footer ul li a{
+ color: #fff;	
+ font-size: 16px;
+	
+}
+
+#hero-contact{
+ background-image: url("../img/marmol1.png");
+ background-position: center;
+ background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	padding-top: 15%;
+	text-align: center;
+	color: #fff;
+}
+
+#hero-contact{
+font-size: 75px;
+font-weight: 600;
+width: 45%;
+margin: auto;
+text-align: center;
+	
+}
+
+.bg-contact {
+background: linear-gradient(to right,#FFCA00, #D9AC00);	
+color: #fff;
+padding: 20px 0;
+border-radius: 10px; 
+margin-top: -2%;
+}
+
+.bg-contact .circulo{
+background-color: rgba(92,127,233,0.60);
+color: #fff;
+box-shadow: none;
+width: 80px;
+height: 60px;
+line-height: 60px;
+font-size: 24px;
+transition: all 0.3s ease-in;	
+}
+
+.bg-contact .circulo:hover{
+background-color: #fff;
+color: #3370e7;
+}
+
+form#contacto input{
+background-color:#f1f2f3;
+border-radius: 0;
+padding: 20px;
+border: o;
+font-size: 13px;	
+}
+
+form#contacto textarea{
+
+border-radius: 0;
+padding: 20px;
+border: 0;
+font-size: 13px;	
+}
+
+#contact-form h2{
+	color: rgba(255,255,255,1.00);
+}
+
+#contact-form p{
+	color: rgba(255,255,255,1.00);
+}
+
+#contact-form ul{
+color: rgba(255,254,254,1.00);
+font-weight: 600;	
+}
+
+#contact-map{
+background:url("../img/footer-bg.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 5px 0;
+}
+
+#contact-map .container{
+margin-top: -10%;		
+}
+
+#contact-form{
+background: rgba(0,0,0,1.00);
+margin-bottom: 5%;	
+padding: 100px 0;
+}
+
+
+#proyecto{
+background:url("../img/marmol-blanco.png");
+text-align: center;	
+align-content: center;
+color: #0C0C0C;	
+}
+
+#proyecto h2{
+
+padding: 20px 0;	
+font-size: 36px;
+font-style: normal;
+font-weight: 200;
+}
+
+#proyecto p{
+font-size: 20px;
+font-style: normal;
+font-weight: 200;
+}
+
+.letra-blanca{
+color: hsla(0,0%,100%,1.00)	
+}
+
+#videos{
+align-content: center;
+align-items: center;
+background: url("../img/marmol1.png");
+padding: 50px 0;
+}
+
